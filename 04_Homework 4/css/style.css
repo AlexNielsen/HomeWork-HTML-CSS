@@ -100,13 +100,13 @@ td a {
   position: relative;
   width: 1000px;
   height: 29px;
-  padding-left: 25px;
+  /*padding-left: 60px;*/ /*изначально планировал сделать паддинг слева и текст-алайн тоже слева*/
   background-color: #343434;
   border-bottom: black solid 1px;
   box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.56);
   list-style: none;
   font-size: 12px;
-  text-align: left;
+  text-align: center; /*изначально текст-алайн слева*/
   vertical-align: middle;
   color: white;
   z-index: 10;
