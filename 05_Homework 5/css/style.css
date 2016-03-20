@@ -1,25 +1,31 @@
+@font-face {
+  font-family: 'Helvetica Neue Regular';
+  src: url('../fonts/helveticaneue-thin-webfont.eot');
+  src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+    url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+    url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
-  font-family: Tahoma, sans-serif;
+  font-family: 'Helvetica Neue Regular';
   font-size: 14px;
   color: white;
 }
 
 html {
-  width: 100%
+  overflow-x: hidden;
+  min-width: 100%;
 }
 
 body {
   width: 1215px;
   height: 1064px;
-}
-
-.wrapper {
-  /*width: 1215px;*/
-  height: 1028px;
   background: url('../img/background.png');
-  width: 100%;
   background-repeat: no-repeat;
-  position: relative;
+  background-position: left bottom;
 }
 
 header {
@@ -77,14 +83,34 @@ li:nth-child(n+3):hover a {
   padding-bottom: 5px;
 }
 
-.reg {
+.center {
+  width: 560px;
+  height: 614px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 17%;
+}
+
+.reghead {
   width: 560px;
   height: 62px;
-  background-color: rgba(0, 0, 0, 0.631);
-  position: absolute;
-  top: 249px;
-  right: 353px;
   color: white;
+  background-color: rgba(0, 0, 0, 0.631);
+  position: relative;
+  /*top: 249px;
+  right: 353px;*/
+  font-weight: bold;
+}
+
+.form {
+  width: 560px;
+  height: 550px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.631);
+  vertical-align: bottom;
+  margin-top: 2px;
+  color: #cccccc;
 }
 
 input, button {
@@ -113,12 +139,13 @@ input:focus {
   margin-bottom: 30px;
   padding-left: 0px;
   border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .uo {
   font-size: 14px;
   margin-bottom: 30px;
-  line-height: normal;;
+  line-height: normal;
 }
 
 .linel {
@@ -158,16 +185,6 @@ p {
   text-align: center;
   font-size: 24px;
   line-height: 60px;
-  color: #cccccc;
-}
-
-.form {
-  width: 560px;
-  height: 550px;
-  display: block;
-  background-color: rgba(0, 0, 0, 0.631);
-  position: absolute;
-  top: 313px;
   color: #cccccc;
 }
 
