@@ -112,6 +112,7 @@ input:focus {
   margin-top: 36px;
   margin-bottom: 30px;
   padding-left: 0px;
+  border-radius: 10px;
 }
 
 .uo {
