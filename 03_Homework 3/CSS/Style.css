@@ -1,3 +1,7 @@
+* {
+  font-family: arial, sans-serif;
+}
+
 body {
   background-color: #f9f9f9;
   width: 1366px;
@@ -22,148 +26,103 @@ body {
 
 header {
   background: #5e5e5e url("../img/panel-gradient.png") repeat-x;
-  display: block;
-  width: auto;
-  height: 40px;
-  margin-top: 40px;
-  margin-left: 46px;
-  margin-right: 46px;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0px;
-}
-
-.menu-top {
-  margin-top: auto;
-  margin-bottom: auto;
-  width: inherit;
-  height: 40px;
+  margin: 40px 46px auto 46px;
 }
 
 .top-bar {
-  display: table-cell;
-  vertical-align: middle;
-  width: 8em;
-  height: 30px;
-  margin-right: 10px;
-  padding: 5px;
-  text-decoration: none;
-  font-size: 17px;
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 24px 0 24px;
+  font-size: 15px;
   color: #ffffff;
-  font-family: sans-serif;
-  text-align: center;
-  border-right: 1px solid;
-  border-left: 1px solid;
-  -webkit-border-image: -webkit-linear-gradient(#5e5e5e, #444343) 1 100%;
-  -o-border-image: -o-linear-gradient(#5e5e5e, #444343) 1 100%;
-  border-image: linear-gradient(#5e5e5e, #444343) 1 100%;
-/*border-image-source: url("../img/panel-gradient.png") no-repeat;*/
-  text-shadow: 1px 1px 2px black, 0 0;
+  text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.5);
+  font-weight: 100;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
 }
 
 .top-bar:hover {
   background-color: #353535;
   border-left: 1px #838383 solid;
   border-right: 1px #838383 solid;
-  border-image: none;
-  height: 30px;
+}
+
+.side-menu {
+  float: left;
+  margin: 40px 46px auto 46px;
+}
+
+.sidebar {
+  width: 240px;
+  line-height: 37px;
+  font-size: 13px;
+  font-weight: normal;
+  text-indent: 23px;
+  transition: .5s;
+  border-top: 1px #5e5e5e solid;
+  border-left: 1px #5e5e5e solid;
+  border-right: 1px #5e5e5e solid;
+  color: #5e5e5e;
+}
+
+.sidebar:last-child {
+  border-bottom: 1px #5e5e5e solid;
+}
+
+.sidebar:hover {
+  text-indent: 36px;
+  transition: .5s;
+  color: #2c2c2c;
+  background-color: #f9f9f9;
+}
+
+.content {
+  width: 678px;
+  height: 400px;
+  margin: 40px 46px 20px auto;
+  border: 1px #5e5e5e solid;
+}
+
+.img {
+  position: absolute;
+  margin: 50px 97px 50px 97px;
+}
+
+.article {
+  width: 628px;
+  margin: 20px 46px 40px auto;
+  padding: 0 25px 0 25px;
+  font-size: 13px;
+  line-height: normal;
+  text-align: justify;
+  color: #5e5e5e;
+}
+
+footer {
+  margin-left: 46px;
+  margin-right: 46px;
+  background-color: #e1e1e1;
+}
+
+.bottom-bar {
+  display: inline-block;
+  line-height: 40px;
+  margin-right: 10px;
+  padding: 0 24px 0 24px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #5e5e5e;
 }
 
 .bottom-bar:hover {
   text-decoration: underline;
 }
 
-.sidebar:hover {
-  color: #2c2c2c;
-  background-color: #f9f9f9;
-  text-indent: 25px;
-  transition: .5s;
-}
-
-.side_menu {
-  float: left;
-  margin-top: 24px;
-  margin-left: 46px;
-  margin-right: 46px;
-}
-
-.sidebar {
-  width: 200px;
-  font-size: 16px;
-  padding: 5px;
-  font-weight: normal;
-  color: #5e5e5e;
-  font-family: sans-serif;
-  border-top: 1px #5e5e5e solid;
-  border-left: 1px #5e5e5e solid;
-  border-right: 1px #5e5e5e solid;
-  line-height: 40px;
-  vertical-align: middle;
-  transition: .5s;
-}
-
-.sidebar:last-child { /*Есть ли более удобный способ сделать так, чтоб границы элеметов в этой таблице не накладывались друг на друга (top и bottom образуют общую границу в 2px)*/
-  border-bottom: 1px #5e5e5e solid;
-}
-
-.content {
-  width: 655px;
-  height: 400px;
-  margin-right: 46px;
-  margin-left: auto;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  border: 1px #5e5e5e solid;
-  padding: 20px;
-  overflow: hidden;
-  position: relative;
-}
-
-.img {  /*Опять же не нашел нормального способа отцентровать изображение, ну и так как пиксельная точность пока не требуется - сделал размер %*/
-  position: relative;
-  display: block;
-  width: 90%;
-  height: 90%;
-  margin: 0 auto;
-}
-
-.article {
-  width: 655px;
-  margin-right: 46px;
-  margin-left: auto;
-  font-size: 16px;
-  font-weight: normal;
-  color: #5e5e5e;
-  font-family: sans-serif;
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-
-footer {
-  width: auto;
-  background-color: #e1e1e1;
-  margin-left: 46px;
-  margin-right: 46px;
-}
-
-.bottom-bar {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  width: 8em;
-  height: 40px;
-  font-size: 16px;
-  font-weight: bold;
-  margin-right: 10px;
-  padding: 5px;
-  color: #5e5e5e;
-  font-family: sans-serif;
-}
-
-.bottom-bar:last-child { /*Так понимаю, что это нужно сделать было по-другому, но способа не нашел и похоже сейчас помру от усталости*/
-  width: 24em;
+.bottom-bar:last-child {
+  float: right;
   text-align: right;
+}
+
+.bottom-bar:last-child:hover {
+  text-decoration: none;
 }
