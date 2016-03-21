@@ -15,24 +15,15 @@
   color: white;
 }
 
-html {
-  overflow-x: hidden;
-  min-width: 100%;
-}
-
 body {
-  width: 1215px;
-  height: 1064px;
-  background: url('../img/background.png');
-  background-repeat: no-repeat;
-  background-position: left bottom;
+  background: url('../img/background.png') no-repeat;
+  background-size: cover;
+  min-height: 1064px;
 }
 
 header {
-  width: 1215px;
   height: 36px;
-  background-image: url('../img/header-background.png');
-  background-repeat: no-repeat;
+  background: url('../img/header-sample.png') repeat-x;
 }
 
 .menu li {
@@ -54,7 +45,7 @@ header {
 
 .menu li:first-child {
   background-image: url('../img/Olabackground.png');
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; /*пропадает если убрать от сюда и перенести на строку выше*/
   background-size: 100%;
   width: 191px;
   margin-right: 20px;
@@ -86,7 +77,6 @@ li:nth-child(n+3):hover a {
 .center {
   width: 560px;
   height: 614px;
-  position: relative;
   margin-left: auto;
   margin-right: auto;
   margin-top: 17%;
@@ -95,26 +85,25 @@ li:nth-child(n+3):hover a {
 .reghead {
   width: 560px;
   height: 62px;
-  color: white;
   background-color: rgba(0, 0, 0, 0.631);
-  position: relative;
-  /*top: 249px;
-  right: 353px;*/
+  margin-bottom: 0;
+}
+
+.reghead > p {
+  color: white;
   font-weight: bold;
 }
 
 .form {
   width: 560px;
   height: 550px;
-  position: absolute;
+  position: absolute; /*если убрать - сеъезжает вниз и разрывается отсутп с верхним эл-том)*/
   background-color: rgba(0, 0, 0, 0.631);
-  vertical-align: bottom;
   margin-top: 2px;
   color: #cccccc;
 }
 
 input, button {
-  display: block;
   margin-left: 142px;
   margin-bottom: 16px;
   padding-left: 17px;
@@ -129,15 +118,14 @@ input, button {
 input:focus {
   background: #1b5288;
   color: white;
-  box-shadow: 0px 0px 5px 2px rgba(85,142,183,1);
+  box-shadow: 0 0 5px 2px rgba(85,142,183,1);
   border-bottom: 1px solid #689bcc;
 }
 
 .fb {
-  /*width: 276px;*/
   margin-top: 36px;
   margin-bottom: 30px;
-  padding-left: 0px;
+  padding-left: 0;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0);
 }
