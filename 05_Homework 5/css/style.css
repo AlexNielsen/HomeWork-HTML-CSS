@@ -21,50 +21,57 @@ body {
   min-height: 1064px;
 }
 
+              /*ВЕРХНЕЕ МЕНЮ*/
+
 header {
   height: 36px;
   background: url('../img/header-sample.png') repeat-x;
 }
 
-.menu li {
-  display: inline-block;
+.topmenu {
   float: right;
-  list-style: none;
+  position: relative;
+}
+
+.topmenu li {
+  display: inline-block;
   line-height: 36px;
   padding: 0 14px 0 14px;
-  text-align: center;
 }
 
-.menu li a {
+.topmenu li a {
   text-decoration: none;
-}
-
-.menu li:first-child a {
-  text-decoration: underline;
-}
-
-.menu li:first-child {
-  background-image: url('../img/Olabackground.png');
-  background-repeat: no-repeat; /*пропадает если убрать от сюда и перенести на строку выше*/
-  background-size: 100%;
-  width: 191px;
-  margin-right: 20px;
-}
-
-li:nth-child(2) {
-  border-left: 1px solid #56a2dc;
-}
-
-li:nth-child(n+3) a {
   color: #60b5ed;
 }
 
-li:nth-child(n+3):hover {
+.topmenu li:hover {
   background: #4eabda;
 }
 
-li:nth-child(n+3):hover a {
+.topmenu li:hover a {
+  background: #4eabda;
   color: white;
+}
+
+.authorization {
+  float: right;
+  border-left: 1px solid #56a2dc;
+}
+
+.authorization li {
+  display: inline-block;
+  line-height: 36px;
+  padding: 0 14px 0 14px;
+}
+
+.authorization li:first-child a {
+  text-decoration: none;
+}
+
+.authorization li:last-child {
+  background-image: url('../img/Olabackground.png');
+  background-size: 100%;
+  margin-right: 20px;
 }
 
 .flag {
@@ -73,6 +80,8 @@ li:nth-child(n+3):hover a {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+              /*ЦЕНТРАЛЬНАЯ ФОРМА*/
 
 .center {
   width: 560px;
