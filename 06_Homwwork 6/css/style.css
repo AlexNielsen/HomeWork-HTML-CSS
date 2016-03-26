@@ -11,6 +11,7 @@ body {
   height: 1310px;
   background-color: white;
   margin: 0 46px 0 46px;
+  position: relative;
 }
 
 header {
@@ -148,6 +149,13 @@ nav ul {
   vertical-align: middle;
 }
 
+.crazy {
+  height: 133px;
+  width: inherit;
+  background-color: blue;
+  margin: 14px 0 16px 0;
+}
+
 aside {
   float: left;
 }
@@ -267,4 +275,79 @@ h5 {
 
 .tirecontainer > img {
   margin-top: 5px;
+}
+
+#disk1,
+#disk2,
+#disk3,
+#tire1,
+#tire2,
+#tire3 {
+  position: relative;
+  width: 7px;
+  height: 7px;
+  margin: 0 15px 0 35px;
+  border: inset 2px #1c4360; /*не работает, почему?*/
+}
+
+label {
+  display: block;
+  color: #465961;
+  font-size: 13px;
+}
+
+button {
+  width: 80px;
+  height: 24px;
+  border: none;
+  border-radius: 15px;
+  background-color: #1f6585;
+  font-size: 11px;
+  line-height: 24px;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 2px 1px rgba(213, 213, 213, 1);
+}
+
+.logos {
+  clear: both;
+  bottom: 125px;
+  position: absolute;
+  width: inherit;
+  height: auto;
+  text-align: center;
+}
+
+                    /* FOOTER */
+
+footer {
+  height: 99px;
+  width: inherit;
+  background-color: #213a4d;
+  border: 1px solid #242c3e;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.bottom-nav {
+  margin: 12px auto 16px auto;
+  padding: 0;
+}
+
+.bottom-nav > li {
+  display: inline-block;
+  font-size: 12px;
+  font-family: arial;
+  color: #bec6c9;
+}
+
+.bottom-nav > li:hover {
+  color: #52abcb;
+}
+
+.copyright {
+  font-size: 10px;
+  color: #7f4740;
+  font-family: arial;
 }
