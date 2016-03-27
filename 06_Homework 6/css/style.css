@@ -234,7 +234,6 @@ float: left;
   font-size: 8px;
   color: #77858b;
   vertical-align: baseline;
-  line-height: 5px;
 }
 
 .filter {
@@ -275,6 +274,20 @@ aside {
   float: left;
 }
 
+.catalog {
+  margin-right: 10px;
+}
+
+.brands {
+  float: right;
+}
+
+.brands ul {
+  padding: 0;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
 main {
   width: 526px;
   height: 627px;
@@ -295,6 +308,11 @@ main {
   font-weight: normal;
   float: left;
   line-height: 25px;
+  padding: 0;
+}
+
+.catalog ul {
+  padding: 0;
 }
 
 .iconbg {
@@ -330,10 +348,15 @@ main {
   margin: 2px 5px 2px 3px;
 }
 
+.topic {
+  margin-left: 2px;
+}
+
 .topic + ul {
   color: #465961;
   font-size: 13px;
   line-height: 25px;
+  margin-left: 36px;
 }
 
 .topic + ul li:hover {
@@ -403,12 +426,14 @@ h5 {
   height: 7px;
   margin: 0 15px 0 35px;
   border: inset 2px #1c4360; /*не работает, почему?*/
+  vertical-align: middle;
 }
 
 label {
   display: block;
   color: #465961;
   font-size: 13px;
+  line-height: 25px;
 }
 
 button {
@@ -416,6 +441,8 @@ button {
   height: 24px;
   border: none;
   border-radius: 15px;
+  margin-top: 20px;
+  margin-left: 25px;
   background-color: #1f6585;
   font-size: 11px;
   line-height: 24px;
