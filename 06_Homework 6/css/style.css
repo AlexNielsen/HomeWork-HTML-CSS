@@ -173,9 +173,9 @@ nav ul {
 }
 
 .search-wrapper {
-display: inline-block;
-width: 205px;
-float: left;
+  display: inline-block;
+  width: 205px;
+  float: left;
 }
 
 
@@ -244,8 +244,9 @@ float: left;
   margin-left: 18px;
 }
 
-option {
+select option {
   font-size: 10px;
+  font-family: Arial;
 }
 
 .search-button {
@@ -266,6 +267,120 @@ option {
 
 .tiresearch {
   position: relative;
+}
+
+.tiresearch-head p {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 54px 5px 10px;
+  color: #154468;
+  font-family: Arial;
+}
+
+.tiresearch label input {
+width: 7px;
+height: 7px;
+margin: 0 1px 0 1px;
+vertical-align: middle;
+}
+
+.filter-middle {
+  display: block;
+  float: left;
+  width: 40px;
+  height: 85px;
+  margin-left: 14px;
+  text-align: right;
+  line-height: 22px;
+}
+
+.tirewrapper {
+  width: 120px;
+  height: 17px;
+  margin-left: 58px;
+  margin-bottom: 7px;
+}
+
+.tirewrapper select {
+  display: inline-block;
+}
+
+.tirewrapper span {
+  font-size: 14px;
+}
+
+.tiresearch > label {
+  margin-left: 58px;
+}
+
+
+.tiresearch > select {
+  margin-left: 58px;
+}
+
+.tiresearch label {
+  line-height: normal;
+  color: black;
+}
+
+.rimsearch > .tiresearch-head {
+  width: 155px;
+}
+
+.filter-right {
+  width: 85px;
+  margin-left: 15px;
+  float: left;
+}
+
+.filter-right > span {
+  display: block;
+  line-height: 16px;
+}
+
+.filter-right > span span {
+  display: block;
+  line-height: normal;
+}
+
+.filter-right > span:first-child span {
+  display: inline;
+  line-height: normal;
+}
+
+.search-wrapper-3 {
+  width: 60px;
+  display: block;
+  float: left;
+  margin-left: 6px;
+}
+
+.search-wrapper-3 select:nth-child(odd) {
+  width: 57px;
+  margin-bottom: 15px;
+}
+
+.search-wrapper-3 select:nth-child(even) {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.search-wrapper-4 {
+  width: 65px;
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 17px;
+  padding-left: 10px;
+  border-left: 1px solid #bdc6ca;
+}
+
+.search-wrapper-4 > span span {
+  display: block;
+}
+
+.search-wrapper-4 > select {
+  width: 56px;
 }
 
     /* ОСНОВНАЯ ЧАСТЬ */
