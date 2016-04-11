@@ -276,7 +276,7 @@ select option {
 }
 
 .tiresearch-head p {
-  margin: 0 54px 5px 10px;
+  margin: 0 50px 5px 10px;
   font-family: 'Arial black', 'Open sans';
   font-size: 12px;
   font-weight: bold;
@@ -333,19 +333,18 @@ select option {
 }
 
 .filter-right {
-  width: 85px;
+  width: 70px;
   float: left;
   margin-left: 15px;
 }
 
 .filter-right > span {
   display: block;
-  line-height: 16px;
 }
 
 .filter-right > span span {
   display: block;
-  line-height: normal;
+  line-height: 1;
 }
 
 .filter-right > span:first-child span {
@@ -378,6 +377,10 @@ select option {
   right: 17px;
   padding-left: 10px;
   border-left: 1px solid #bdc6ca;
+}
+
+.search-wrapper-4 > .firstw {
+  margin-top: 0;
 }
 
 .search-wrapper-4 > span span {
